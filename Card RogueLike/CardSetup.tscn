@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Cards/Event/Card.png" type="Texture" id=1]
+[ext_resource path="res://CardSetup.gd" type="Script" id=2]
+
+[node name="CardBase" type="MarginContainer"]
+margin_right = 60.0
+margin_bottom = 90.0
+rect_pivot_offset = Vector2( 30, 45 )
+script = ExtResource( 2 )
+
+[node name="Border" type="Sprite" parent="."]
+
+[node name="Card" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
