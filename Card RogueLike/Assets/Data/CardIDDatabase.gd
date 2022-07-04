@@ -1,1 +1,6 @@
-var CardIDDatabase = [1001, 1002, 1003, 1004, 2001, 2002, 2003, 3001, 3002, 3003, 4001, 4002]
+extends Node
+
+export var CardIDAtack = ["1001", "1002", "1003"]
+export var CardIDDefence = ["2001", "2002"]
+export var CardIDEvent = ["3001"]
+export var CardIDPotion = ["4001"]
