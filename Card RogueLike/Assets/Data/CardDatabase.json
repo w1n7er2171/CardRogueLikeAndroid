@@ -1,0 +1,58 @@
+{
+  "1001": {
+    "CardType": "Atack",
+    "CardName": "\"Punch\"",
+    "Cost": 1,
+    "DMG/ARM etc": 5,
+    "Type": "PhysDefault",
+    "Effect": "\"Punch an enemy, deal 5 physic damage\""
+  },
+  "1002": {
+    "CardType": "Atack",
+    "CardName": "\"Magic Punch\"",
+    "Cost": 3,
+    "DMG/ARM etc": 15,
+    "Type": "MagicDefault",
+    "Effect": "\"Punch an enemy using magic, deal 15 magic damage\""
+  },
+  "1003": {
+    "CardType": "Atack",
+    "CardName": "\"Backstab\"",
+    "Cost": 5,
+    "DMG/ARM etc": 25,
+    "Type": "PhysBleed",
+    "Effect": "\"Jump behind an enemy, deal 25 physic damage, apply bleeding\""
+  },
+  "2001": {
+    "CardType": "Defence",
+    "CardName": "\"Shield\"",
+    "Cost": 2,
+    "DMG/ARM etc": 10,
+    "Type": "PhysDefault",
+    "Effect": "\"Raise your shield, get 10 physic armour\""
+  },
+  "2002": {
+    "CardType": "Defence",
+    "CardName": "\"Magic Barier\"",
+    "Cost": 2,
+    "DMG/ARM etc": 10,
+    "Type": "MagicDefault",
+    "Effect": "\"Use a spell, get 10 magic armour\""
+  },
+  "3001": {
+    "CardType": "Event",
+    "CardName": "\"Run\"",
+    "Cost": 2,
+    "DMG/ARM etc": 5,
+    "Type": "NoType",
+    "Effect": "\"Move 5 tiles\""
+  },
+  "4001": {
+    "CardType": "Potion",
+    "CardName": "\"Healing Potion\"",
+    "Cost": 0,
+    "DMG/ARM etc": 25,
+    "Type": "NoType",
+    "Effect": "\"Heal 25 HP\""
+  }
+}
