@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Assets/Cards/Event/Card.png" type="Texture" id=1]
-[ext_resource path="res://CardSetup.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Data/CardSetup.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Data/CardIDDatabase.gd" type="Script" id=3]
 
 [node name="CardBase" type="MarginContainer"]
 margin_right = 60.0
@@ -14,3 +15,6 @@ script = ExtResource( 2 )
 [node name="Card" type="Sprite" parent="."]
 visible = false
 texture = ExtResource( 1 )
+
+[node name="CardIDData" type="Node" parent="."]
+script = ExtResource( 3 )
