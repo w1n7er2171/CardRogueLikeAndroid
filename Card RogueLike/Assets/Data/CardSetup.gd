@@ -8,7 +8,7 @@ var randNum = randi()
 
 onready var CardIDData = get_node("CardIDData")
 
-var a = 0 #Ivan Pidor
+var a = 0
 var d = 0
 var e = 0
 var p = 0
