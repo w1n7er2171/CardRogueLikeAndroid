@@ -45,7 +45,7 @@ func _ready():
 	#print(DataLoad.card_data)
 	print("\n", InventorySave.InventoryID, "\n")
 	print(Inventory)
-	#print("\n", randNum, "\n")
+	print("\n", randNum, "\n")
 	#randomize()
 	#randNum = randi()
 	#print(randNum)
