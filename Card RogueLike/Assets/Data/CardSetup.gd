@@ -4,9 +4,11 @@ extends MarginContainer
 var CardData = load("res://Assets/Data/DataLoad.gd")
 var CardInfo
 var CardID
+var Inventory = []
 var randNum = randi()
 
 onready var CardIDData = get_node("CardIDData")
+onready var InventorySave = get_node("InventoryLoad")
 
 var a = 0
 var d = 0
@@ -22,7 +24,18 @@ func _process(delta):
 		counter += 1
 
 func _ready():
+	InventorySave.inventory_load()
+	
+	print("Old Cards \n")
 	for i in range(8):
+		CardID = InventorySave.InvIDParsedLoad[i]
+		CardInfo = DataLoad.card_data[CardID].CardName
+		print(CardID, "\n", CardInfo, "\n")
+		i += 1
+	
+	print("\n New Cards \n")
+	for i in range(8):
+		i = 0
 		randomize()
 		if a < 3:
 			CardID = CardIDData.CardIDAtack[randi() % CardIDData.CardIDAtack.size()]
@@ -36,10 +49,16 @@ func _ready():
 			CardID = CardIDData.CardIDEvent[randi() % CardIDData.CardIDEvent.size()]
 			CardInfo = DataLoad.card_data[CardID].CardName
 			e = e + 1
+		Inventory.append(CardID)
 		print(CardID)
 		print(CardInfo)
 		i = i+1
+	print("\n Old Data ", InventorySave.InvIDParsedLoad, "\n")
+	InventorySave.InventoryID = Inventory
+	InventorySave.inventory_save()
+	print("\n New Data ", InventorySave.InventoryID, "\n")
 	
+
 
 	
 	#print(DataLoad.card_data)
@@ -48,4 +67,4 @@ func _ready():
 	randNum = randi()
 	print(randNum)
 
-	
+
