@@ -13,6 +13,13 @@ var d = 0
 var e = 0
 var p = 0
 
+var counter = 1
+
+#label text check
+func _process(delta):
+		
+		$Card/Label.text = str(counter % 100)
+		counter += 1
 
 func _ready():
 	for i in range(8):
@@ -33,8 +40,12 @@ func _ready():
 		print(CardInfo)
 		i = i+1
 	
+
+	
 	#print(DataLoad.card_data)
 	print("\n", randNum, "\n")
 	randomize()
 	randNum = randi()
 	print(randNum)
+
+	
